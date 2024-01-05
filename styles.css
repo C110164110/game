@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #D2B48C; /* 深咖啡色背景 */
+    color: #8B4513; /* 深咖啡色文字 */
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: auto;
+}
+
+.carousel {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.slides {
+    display: flex;
+}
+
+.slide {
+    flex: 0 0 100%;
+    display: none;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.dots-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #A9845F; /* 中咖啡色指示點 */
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #8B4513; /* 深咖啡色活動中的指示點 */
+}
+
+.bottom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D2B48C; /* 深咖啡色底部區域 */
+    padding: 20px;
+}
+
+.team-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    margin: 10px;
+}
+
+.team-img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+}
+
+.copyright {
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    gap: 5px;
+}
+h1 {
+    text-align: center; /* 讓標題文字置中 */
+    color: #FFF; /* 白色文字（可根據需求調整） */
+    background-color: #A9845F; /* 中咖啡色背景（可根據需求調整） */
+    padding: 10px; /* 調整文字周圍的內邊距 */
+    border-radius: 10px; /* 圓角邊框（可根據需求調整） */
+}
