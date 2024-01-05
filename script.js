@@ -1,4 +1,8 @@
+// script.js
+
 let slideIndex = 0;
+let touchStartX = 0;
+let touchEndX = 0;
 
 function showSlides() {
     const slides = document.querySelectorAll('.slide');
@@ -27,10 +31,34 @@ function currentSlide(n) {
     showSlides();
 }
 
+function handleTouchStart(event) {
+    touchStartX = event.touches[0].clientX;
+}
+
+function handleTouchEnd(event) {
+    touchEndX = event.changedTouches[0].clientX;
+    handleSwipe();
+}
+
+function handleSwipe() {
+    const sensitivity = 50;
+
+    if (touchEndX < touchStartX - sensitivity) {
+        // 向左滑動
+        slideIndex++;
+        showSlides();
+    } else if (touchEndX > touchStartX + sensitivity) {
+        // 向右滑動
+        slideIndex--;
+        showSlides();
+    }
+}
+
+// 添加觸摸事件監聽器
+const carousel = document.querySelector('.carousel');
+carousel.addEventListener('touchstart', handleTouchStart, false);
+carousel.addEventListener('touchend', handleTouchEnd, false);
+
 // 初始啟動輪播
 showSlides();
 
-// 添加自動輪播功能，每隔 3000 毫秒（3 秒）切換一次
-setInterval(() => {
-    showSlides();
-}, 3000);
