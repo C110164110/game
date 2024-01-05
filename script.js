@@ -1,5 +1,3 @@
-// 在 script.js 中添加以下輪播控制代碼
-
 let slideIndex = 0;
 
 function showSlides() {
@@ -31,3 +29,8 @@ function currentSlide(n) {
 
 // 初始啟動輪播
 showSlides();
+
+// 添加自動輪播功能，每隔 3000 毫秒（3 秒）切換一次
+setInterval(() => {
+    showSlides();
+}, 3000);
