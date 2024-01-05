@@ -76,8 +76,19 @@ img {
     font-size: 14px;
     text-align: center;
     display: flex;
-    gap: 5px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 10px;
+    background-color: #A9845F; /* 中咖啡色背景（可根據需求調整） */
+    color: #FFF; /* 白色文字（可根據需求調整） */
 }
+
 h1 {
     text-align: center; /* 讓標題文字置中 */
     color: #FFF; /* 白色文字（可根據需求調整） */
