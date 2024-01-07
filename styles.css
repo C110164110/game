@@ -110,9 +110,3 @@ h1 {
     font-size: 18px; /* 調整文字大小（根據需要調整） */
     font-weight: bold; /* 可選，加粗文字 */
 }
-/* 網頁作品字段下方的額外文字樣式 */
-.additional-text {
-    text-align: center;
-    margin-top: 25px;
-    color: #A9845F; /* 中咖啡色文字顏色（可根據需求調整） */
-}
