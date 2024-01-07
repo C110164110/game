@@ -127,3 +127,17 @@ h1 {
 .arrow-right {
     right: 10px;
 }
+/* 在輪播圖片上懸停時的效果 */
+.slide:hover {
+    /* 這裡添加你想要的效果，例如陰影、縮放、亮度等 */
+    transform: scale(1.1);
+    transition: transform 0.3s ease; /* 添加過渡效果 */
+}
+
+/* 在團隊成員圖片上懸停時的效果 */
+.team-img:hover {
+    /* 這裡添加你想要的效果 */
+    filter: grayscale(50%);
+    transition: filter 0.3s ease; /* 添加過渡效果 */
+}
+
