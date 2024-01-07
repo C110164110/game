@@ -17,7 +17,7 @@ body {
 
 .slides {
     display: flex;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .slide {
@@ -102,14 +102,11 @@ h1 {
     margin-top: 5px; /* 調整名字和圖片的垂直間距 */
 }
 .slide-text {
-    position: absolute;
-    top: 5px; /* 調整文字和圖片的垂直位置 */
     left: 50%; /* 使文字水平置中 */
     transform: translateX(-50%); /* 使文字水平置中 */
-    color: #A9845F; /* 調整文字顏色（根據需要調整） */
-    font-size: 20px; /* 調整文字大小為 30px */
+    color: #b15f0e; /* 調整文字顏色（根據需要調整） */
+    font-size: 30px; /* 調整文字大小*/
     font-weight: bold; /* 可選，加粗文字 */
-    margin-top: 20px
+    position: relative;
 }
-
 
