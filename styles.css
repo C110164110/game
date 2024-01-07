@@ -103,10 +103,11 @@ h1 {
 }
 .slide-text {
     position: absolute;
-    top: 50px; /* 調整文字和圖片的垂直位置 */
+    top: 20px; /* 調整文字和圖片的垂直位置 */
     left: 50%; /* 使文字水平置中 */
     transform: translateX(-50%); /* 使文字水平置中 */
     color: #FFF; /* 調整文字顏色（根據需要調整） */
     font-size: 18px; /* 調整文字大小（根據需要調整） */
     font-weight: bold; /* 可選，加粗文字 */
 }
+
