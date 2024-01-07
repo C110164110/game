@@ -98,9 +98,9 @@ h1 {
     border-radius: 10px; /* 圓角邊框（可根據需求調整） */
 }
 .team-name {
+    font-family: 'Noto Sans TC', sans-serif;
     text-align: center;
     margin-top: 5px; /* 調整名字和圖片的垂直間距 */
-    font-family: 'Noto Sans TC', sans-serif;
 }
 .slide-text {
     left: 50%; /* 使文字水平置中 */
