@@ -110,4 +110,31 @@ h1 {
     font-weight: bold; /* 可選，加粗文字 */
     margin-top: 80px; /* 往下移動 50px，根據需要調整 */
 }
+.additional-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+.carousel {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    flex: 0 0 100%;
+    display: none;
+}
+
+/* 網頁作品字段下方的額外文字樣式 */
+.additional-text {
+    text-align: center;
+    margin-top: 20px;
+    color: #A9845F; /* 中咖啡色文字顏色（可根據需求調整） */
+}
