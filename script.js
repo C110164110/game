@@ -12,18 +12,18 @@ function showSlides() {
         slides[i].style.display = 'none';
     }
 
-    slideIndex++;
-
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
+    if (slideIndex >= slides.length) {
+        slideIndex = 0;
+    } else if (slideIndex < 0) {
+        slideIndex = slides.length - 1;
     }
 
     for (let i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(' active', '');
     }
 
-    slides[slideIndex - 1].style.display = 'block';
-    dots[slideIndex - 1].className += ' active';
+    slides[slideIndex].style.display = 'block';
+    dots[slideIndex].className += ' active';
 }
 
 function currentSlide(n) {
@@ -46,12 +46,12 @@ function handleSwipe() {
     if (touchEndX < touchStartX - sensitivity) {
         // 向左滑動
         slideIndex++;
-        showSlides();
     } else if (touchEndX > touchStartX + sensitivity) {
         // 向右滑動
         slideIndex--;
-        showSlides();
     }
+
+    showSlides();
 }
 
 // 添加觸摸事件監聽器
@@ -61,4 +61,3 @@ carousel.addEventListener('touchend', handleTouchEnd, false);
 
 // 初始啟動輪播
 showSlides();
-
