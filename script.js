@@ -12,7 +12,7 @@ function showSlides() {
         slides[i].style.display = 'none';
     }
 
-    if (slideIndex >= slides.length) {
+    if (slideIndex > slides.length - 1) {
         slideIndex = 0;
     } else if (slideIndex < 0) {
         slideIndex = slides.length - 1;
@@ -59,5 +59,51 @@ const carousel = document.querySelector('.carousel');
 carousel.addEventListener('touchstart', handleTouchStart, false);
 carousel.addEventListener('touchend', handleTouchEnd, false);
 
+// 添加滑鼠滾輪事件監聽器
+carousel.addEventListener('wheel', handleWheel, false);
+
 // 初始啟動輪播
 showSlides();
+
+// 滑鼠滾輪事件處理
+function handleWheel(event) {
+    if (event.deltaY < 0) {
+        // 滑鼠向上滾動，向左切換
+        slideIndex--;
+    } else {
+        // 滑鼠向下滾動，向右切換
+        slideIndex++;
+    }
+
+    showSlides();
+    // 防止預設滾動事件
+    event.preventDefault();
+}
+function plusSlides(n) {
+    slideIndex += n;
+    showSlides();
+}
+
+// 修改 showSlides 函數中的邏輯，以處理循環切換
+function showSlides() {
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+
+    if (slideIndex > slides.length - 1) {
+        slideIndex = 0;
+    } else if (slideIndex < 0) {
+        slideIndex = slides.length - 1;
+    }
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+
+    slides[slideIndex].style.display = 'block';
+
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(' active', '');
+    }
+
+    dots[slideIndex].className += ' active';
+}
