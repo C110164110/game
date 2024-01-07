@@ -100,6 +100,7 @@ h1 {
 .team-name {
     text-align: center;
     margin-top: 5px; /* 調整名字和圖片的垂直間距 */
+    font-family: 'Noto Sans TC', sans-serif;
 }
 .slide-text {
     left: 50%; /* 使文字水平置中 */
