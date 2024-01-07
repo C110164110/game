@@ -96,3 +96,7 @@ h1 {
     padding: 10px; /* 調整文字周圍的內邊距 */
     border-radius: 10px; /* 圓角邊框（可根據需求調整） */
 }
+.team-name {
+    text-align: center;
+    margin-top: 5px; /* 調整名字和圖片的垂直間距 */
+}
