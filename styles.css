@@ -116,6 +116,6 @@ h1 {
 /* 網頁作品字段下方的額外文字樣式 */
 .additional-text {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 5px;
     color: #A9845F; /* 中咖啡色文字顏色（可根據需求調整） */
 }
