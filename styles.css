@@ -106,9 +106,10 @@ h1 {
     top: 20px; /* 調整文字和圖片的垂直位置 */
     left: 50%; /* 使文字水平置中 */
     transform: translateX(-50%); /* 使文字水平置中 */
-    color: #FFF; /* 調整文字顏色（根據需要調整） */
+    color: #A9845F; /* 調整文字顏色（根據需要調整） */
     font-size: 30px; /* 調整文字大小為 30px */
     font-weight: bold; /* 可選，加粗文字 */
+    margin-top: 5px
 }
 
 
