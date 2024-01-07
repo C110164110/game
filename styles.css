@@ -113,24 +113,6 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
 }
-
-.carousel {
-    position: relative;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.slides {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slide {
-    flex: 0 0 100%;
-    display: none;
-}
-
 /* 網頁作品字段下方的額外文字樣式 */
 .additional-text {
     text-align: center;
