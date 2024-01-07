@@ -111,3 +111,19 @@ h1 {
     font-family: 標楷體;
 }
 
+.arrow {
+    font-size: 55px;
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
